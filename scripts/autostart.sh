@@ -11,7 +11,8 @@ function run {
 
 rm ~/.cache/workspaces
 nitrogen --save --set-zoom-fill ~/Pictures/Wallpapers/default.jpg
-run picom --experimental-backends -b # --vsync should prevent screen tearing on most setups if needed
+# run picom --experimental-backends -b # --vsync should prevent screen tearing on most setups if needed
+run picom -b # --vsync should prevent screen tearing on most setups if needed
 
 eww -c ~/.config/eww/bar/ close-all
 eww -c ~/.config/eww/bar/ open bar
