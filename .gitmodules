@@ -15,3 +15,6 @@
 [submodule "GitRepositories/binary-wallpaper"]
 	path = GitRepositories/binary-wallpaper
 	url = https://github.com/Asocia/binary-clock-wallpaper.git
+[submodule "GitRepositories/bat-extras"]
+	path = GitRepositories/bat-extras
+	url = https://github.com/eth-p/bat-extras.git
