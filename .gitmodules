@@ -18,3 +18,6 @@
 [submodule "GitRepositories/bat-extras"]
 	path = GitRepositories/bat-extras
 	url = https://github.com/eth-p/bat-extras.git
+[submodule "GitRepositories/fzf"]
+	path = GitRepositories/fzf
+	url = https://github.com/junegunn/fzf
