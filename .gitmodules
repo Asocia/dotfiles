@@ -21,3 +21,6 @@
 [submodule "GitRepositories/fzf"]
 	path = GitRepositories/fzf
 	url = https://github.com/junegunn/fzf
+[submodule ".config/tmux/plugins/tpm"]
+	path = .config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
