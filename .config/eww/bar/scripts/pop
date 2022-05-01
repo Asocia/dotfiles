@@ -2,7 +2,7 @@
 
 calendar() {
 LOCK_FILE="$HOME/.cache/eww-calendar.lock"
-EWW_BIN="$HOME/scripts/eww"
+EWW_BIN="eww"
 
 run() {
     ${EWW_BIN} -c $HOME/.config/eww/bar open calendar
@@ -22,7 +22,6 @@ fi
 
 system() {
 LOCK_FILE_MEM="$HOME/.cache/eww-system.lock"
-EWW_BIN="$HOME/scripts/eww"
 
 run() {
     ${EWW_BIN} -c $HOME/.config/eww/bar open system 
@@ -42,7 +41,6 @@ fi
 
 music() {
 LOCK_FILE_SONG="$HOME/.cache/eww-song.lock"
-EWW_BIN="$HOME/scripts/eww"
 
 run() {
     ${EWW_BIN} -c $HOME/.config/eww/bar open music_win 
@@ -63,7 +61,6 @@ fi
 
 audio() {
 LOCK_FILE_AUDIO="$HOME/.cache/eww-audio.lock"
-EWW_BIN="$HOME/scripts/eww"
 
 run() {
     ${EWW_BIN} -c $HOME/.config/eww/bar open audio_ctl 
