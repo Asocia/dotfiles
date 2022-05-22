@@ -14,6 +14,13 @@ def show_window(window):
     window.group.cmd_toscreen()
 
 
+@hook.subscribe.client_killed
+def toggle_previous_group_if_last_window_killed(window):
+    group = window.group
+    if len(group.info()['windows']) == 1:
+        group.screen.toggle_group()
+
+
 @hook.subscribe.client_managed
 @hook.subscribe.client_urgent_hint_changed
 @hook.subscribe.client_killed
@@ -25,3 +32,4 @@ def hook_response(*args, **kwargs):
     file = os.path.expanduser('~/.cache/workspaces')
     with open(file, 'a') as f:
         print('workspace changed', file=f)
+
